@@ -1,0 +1,769 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/style.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
+
+</head>
+<body class="bg-white-100 h-screen">
+  <div class="bg-slate-100">
+    <nav class="flex justify-between items-center py-4">
+      <div class="flex items-center ml-20">
+        <img src="/assets/logo.png" alt="" class="w-8 h-8 mr-2" />
+        <span class="text-2xl text-blue-950 font-bold">FintechX TNC</span>
+      </div>
+  
+      <div>
+        <ul class="text-gray-500 flex justify-between gap-7 items-center">
+          <li class="flex gap-2 items-center">
+            <a href="#" class="hover:text-blue-700">Trade</a>
+            <img
+              src="/assets/arrow-thin-chevron-bottom-icon.png"
+              width="10px"
+              height="10px"
+              alt=""
+              class="opacity-50"
+            />
+          </li>
+          <li class="flex gap-2 items-center"><a href="#" class="hover:text-blue-700">Featured</a>
+            <img
+            src="/assets/arrow-thin-chevron-bottom-icon.png"
+            width="10px"
+            height="10px"
+            alt=""
+            class="opacity-50"
+          /></li>
+          <li><a href="#" class="hover:text-blue-700">Market</a></li>
+          <li><a href="#" class="hover:text-blue-700">Portfolio</a></li>
+          <li><a href="#" class="hover:text-blue-700">Blog</a></li>
+        </ul>
+      </div>
+  
+      <div class="mr-20">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        >
+          Get Started
+        </button>
+      </div>
+    </nav>
+  
+    <!-- Hero Section -->
+    <div class="flex justify-between items-center mt-16">
+      <div class="ml-20">
+        <div class="mt-12 ml-20">
+          <h2 class="text-3xl font-bold text-gray-800">
+            Modern Banking for a
+          </h2>
+          <p class="text-5xl font-bold text-gray-900">Digital World</p>
+          <p class="text-gray-500 mt-6 leading-relaxed">
+            Experience seamless banking with cutting-edge security, <br />
+            effortless transactions, and 24/7 access. Manage your <br />
+            finances anytime, anywhere—with just a tap. <br />
+            Let me know if you need any tweaks!
+          </p>
+        </div>
+  
+        <div class="mt-8 ml-20 flex gap-4">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Trade Now
+          </button>
+          <button
+            class="bg-slate-100 hover:bg-gray-100 text-blue-700 font-semibold py-2 px-4 border border-blue-500 rounded shadow"
+          >
+            Learn More
+          </button>
+        </div>
+  
+        <div class="mt-8 ml-20">
+          <div class="flex items-center gap-4 mb-2">
+            <img
+              src="/assets/right-correct-icon.png"
+              width="15px"
+              height="15px"
+              alt=""
+              class="opacity-75"
+            />
+            <p class="text-blue-900 font-semibold">
+              Transactions are secure and encrypted
+            </p>
+          </div>
+  
+          <div class="flex items-center gap-4">
+            <img
+              src="/assets/right-correct-icon.png"
+              width="15px"
+              height="15px"
+              alt=""
+              class="opacity-75"
+            />
+            <p class="text-blue-900 font-semibold">
+              Solutions for Using Currency Without Banks
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mr-20">
+        <img src="/assets/cards.png" class="mb-6 w-full max-w-lg" alt="Cards" />
+      </div>
+    </div>
+  
+    <!-- Logos Section -->
+    <div class="bg-blue-950 mt-16 py-8">
+      <div
+        class="flex items-center justify-between w-full px-24 text-white text-4xl font-bold"
+      >
+        <p>Logoipsum</p>
+        <p>Logoipsum</p>
+        <p>Logoipsum</p>
+        <p>Logoipsum</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- end -->
+
+  <div class="bg-white py-12 px-8">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-8 text-center">
+      See You're shopping list
+    </h2>
+  
+    <table class="min-w-full divide-y divide-gray-200 rounded-md shadow-sm">
+      <thead class="bg-gray-50">
+        <tr>
+          <th
+            scope="col"
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+          ></th>
+          <th
+            scope="col"
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+          >
+            Transaction Name
+          </th>
+          <th
+            scope="col"
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+          >
+            Amount
+          </th>
+          <th
+            scope="col"
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+          >
+            Status
+          </th>
+          <th
+            scope="col"
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+          >
+            Transaction ID
+          </th>
+          <th
+            scope="col"
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+          >
+            Balance
+          </th>
+          <th scope="col" class="relative px-6 py-3">
+            <span class="sr-only">Trade</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-200">
+        <!-- Row 1 -->
+        <tr>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <img
+              src="/assets"
+              alt="Amazon"
+              class="h-8 w-8 rounded-full"
+            />
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            Amazon Purchase
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $500.00
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-green-500 font-semibold">
+            Completed
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            TXN987654321
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $6,732.50
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+            <button
+              class="bg-white hover:bg-gray-100 text-gray-700 font-semibold py-1 px-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200"
+            >
+              Trade
+            </button>
+          </td>
+        </tr>
+  
+        <!-- Row 2 -->
+        <tr>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <img
+              src="/assets"
+              alt="Apple"
+              class="h-20 w-20 rounded-full"
+            />
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Apple</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $600.00
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-red-500 font-semibold">
+            Pending
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            TXN123456789
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $6,232.50
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+            <button
+              class="bg-white hover:bg-gray-100 text-gray-700 font-semibold py-1 px-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200"
+            >
+              Trade
+            </button>
+          </td>
+        </tr>
+  
+        <!-- Row 3 -->
+        <tr>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <img
+              src="/assets"
+              alt="Spotify"
+              class="h-20 w-20 rounded-full"
+            />
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            Spotify Premium
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $120.00
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-red-500 font-semibold">
+            Pending
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            TXN345678901
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $6,016.51
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+            <button
+              class="bg-white hover:bg-gray-100 text-gray-700 font-semibold py-1 px-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200"
+            >
+              Trade
+            </button>
+          </td>
+        </tr>
+  
+        <!-- Row 4 -->
+        <tr>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <img
+              src="/assets"
+              alt="Electricity"
+              class="h-20 w-20 rounded-full"
+            />
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            Electricity Bill Payment
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $800.00
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-green-500 font-semibold">
+            Completed
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            TXN765432189
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $6,016.51
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+            <button
+              class="bg-white hover:bg-gray-100 text-gray-700 font-semibold py-1 px-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200"
+            >
+              Trade
+            </button>
+          </td>
+        </tr>
+  
+        <!-- Row 5 -->
+        <tr>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <img
+              src="/assets"
+              alt="Gym"
+              class="h-20 w-20 rounded-full"
+            />
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            Gym Membership
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $300.00
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-red-500 font-semibold">
+            Pending
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            TXN234567890
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $9,009.01
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+            <button
+              class="bg-white hover:bg-gray-100 text-gray-700 font-semibold py-1 px-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200"
+            >
+              Trade
+            </button>
+          </td>
+        </tr>
+  
+        <!-- Row 6 -->
+        <tr>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <img
+              src="/assets/uuuu.png"
+              alt="Uber"
+              class="h-20 w-20rounded-full"
+            />
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            Uber Ride Payment
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $175.00
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-green-500 font-semibold">
+            Completed
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            TXN654321987
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            $9,009.01
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+            <button
+              class="bg-white hover:bg-gray-100 text-gray-700 font-semibold py-1 px-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200"
+            >
+              Trade
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+  <div>
+      <div class="bg-gray-100  mt-5 py-16 px-8">
+      
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Left Side: Reasons Text -->
+      <div class="mt-5 ml-10">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">
+          Reasons to choose <br />
+          FintechX from Us
+        </h2>
+        <p class="text-gray-500 leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Totam dicta voluptatibus, repellat est quas sit omnis <br />
+          similique eveniet error praesentium, molestias
+        </p>
+        </div>
+      </div>
+
+
+       <!-- Right Side: Feature Boxes -->
+       <div class="flex justify-center mt-5 md:grid-cols-2 gap-8">
+        <!-- Feature 1 -->
+        <div
+          class="flex flex-col bg-white items-center p-6 rounded-md shadow-md hover:shadow-lg transition duration-300"
+        >
+          <img
+            src="/assets/icon1.png"
+            alt="Icon 1"
+            class="h-12 w-12 mb-4 rounded-full bg-blue-100 p-2"
+          />
+          <p class="text-lg font-semibold text-gray-800 mb-2">Lorem ipsum</p>
+          <p class="text-gray-500 text-center">
+            Lorem ipsum dolor sit amet, consectetur <br />
+            adipisicing elit. Modi itaque <br />
+            temporibus minus.
+          </p>
+        </div>
+  
+        <!-- Feature 2 -->
+
+        <div
+        class="flex flex-col bg-white items-center p-6 rounded-md shadow-md hover:shadow-lg transition duration-300"
+      >
+        <img
+          src="/assets/icon1.png"
+          alt="Icon 1"
+          class="h-12 w-12 mb-4 rounded-full bg-blue-100 p-2"
+        />
+        <p class="text-lg font-semibold text-gray-800 mb-2">Lorem ipsum</p>
+        <p class="text-gray-500 text-center">
+          Lorem ipsum dolor sit amet, consectetur <br />
+          adipisicing elit. Modi itaque <br />
+          temporibus minus.
+        </p>
+      </div>
+
+
+        <!-- Feature 3 -->
+        <div
+          class="flex flex-col bg-white items-center p-6 rounded-md shadow-md hover:shadow-lg transition duration-300"
+        >
+          <img
+            src="/assets/icon3.png"
+            alt="Icon 3"
+            class="h-12 w-12 mb-4 rounded-full bg-red-100 p-2"
+          />
+          <p class="text-lg font-semibold text-gray-800 mb-2">Consectetur</p>
+          <p class="text-gray-500 text-center">
+            Lorem ipsum dolor sit amet, consectetur <br />
+            doloremque. <br />
+            Repellat, voluptatibus.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+      </div>
+
+
+      <div class="bg-white py-16 px-8">
+        <!-- Section with Image on Right -->
+        <div class="mt-10">
+          <div class="flex justify-center items-center gap-24">
+            <!-- Text Content -->
+            <div class="mt-10 max-w-md">
+              <h2 class="text-3xl font-semibold text-gray-800 mb-4">
+                Seamless Integration
+              </h2>
+              <p class="text-gray-500 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Ipsum, officia officiis est, tempore dolores harum a con <br />
+                sequatur consectetur, repudiandae asperiores ea assumend <br />
+                a vitae numquam rerum hic accusamus aspernatur obcaecati <br />
+                ad.
+              </p>
+              <button
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 mt-6 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+              >
+                Explore More
+              </button>
+            </div>
+      
+            <!-- Image -->
+            <div>
+              <img
+                src="/assets/Screenshot From 2025-02-24 20-58-47.png"
+                alt="Seamless Integration"
+                class="rounded-lg  w-full max-w-lg"
+              />
+            </div>
+          </div>
+        </div>
+      
+        <!-- Duplicate this section as needed -->
+      </div>
+      <div class="bg-white py-16 px-8">
+        <!-- Section with Image on Right -->
+        <div class="mt-10">
+          <div class="flex justify-center items-center gap-24">
+
+             <!-- Image -->
+             <div>
+              <img
+                src="/assets/Screenshot From 2025-02-24 20-58-47.png"
+                alt="Seamless Integration"
+                class="rounded-lg  w-full max-w-lg"
+              />
+            </div>
+
+            <!-- Text Content -->
+            <div class="mt-10 max-w-md">
+              <h2 class="text-3xl font-semibold text-gray-800 mb-4">
+                Seamless Integration
+              </h2>
+              <p class="text-gray-500 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Ipsum, officia officiis est, tempore dolores harum a con <br />
+                sequatur consectetur, repudiandae asperiores ea assumend <br />
+                a vitae numquam rerum hic accusamus aspernatur obcaecati <br />
+                ad.
+              </p>
+              <button
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 mt-6 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+              >
+                Explore More
+              </button>
+            </div>
+      
+           
+          </div>
+        </div>
+      
+      
+      </div>
+
+      <section class="bg-gray-200 text-gray-800">
+        <header class="text-center py-12">
+         <h1 class="text-3xl font-semibold">
+          The Latest Information and Latest Insights from us
+         </h1>
+         <p class="text-gray-600 mt-4">
+          We are ready to provide you with the latest knowledge that can enrich your understanding.
+         </p>
+        </header>
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class=" rounded-lg  overflow-hidden">
+           <img alt="Person using a laptop and smartphone for mobile banking" class="w-full h-48 object-cover" height="400" src="/assets/" width="600"/>
+           <div class="p-6">
+            <span class="text-gray-500 ml-40 text-sm">
+             Mobile Banking
+            </span>
+            <h2 class="text-lg font-semibold mt-2">
+             5 Smart Ways to Save Money Without Sacrificing Your Lifestyle
+            </h2>
+            <button class="mt-4 px-4 py-2 border border-gray-300 rounded-full text-gray-600">
+             Read more
+            </button>
+           </div>
+          </div>
+          <div class=" rounded-lg  overflow-hidden">
+           <img alt="Person holding a smartphone showing online banking app" class="w-full h-48 object-cover" height="400" src="" width="600"/>
+           <div class="p-6">
+            <span class="text-gray-500 ml-60 text-sm">
+             Mobile Finance
+            </span>
+            <h2 class="text-lg font-semibold mt-2">
+             How to Spot and Avoid Online Banking Scams Like a Pro
+            </h2>
+            <button class="mt-4 px-4 py-2 border border-gray-300 rounded-full text-gray-600">
+             Read more
+            </button>
+           </div>
+          </div>
+          <div class="rounded-lg  hoverflow-hidden">
+           <img alt="Digital representation of future banking technology" class="w-full h-48 object-cover" height="400" src="" width="600"/>
+           <div class="p-6">
+            <span class="text-gray-500 ml-40 text-sm">
+             Mobile banking
+            </span>
+            <h2 class="text-lg font-semibold mt-2">
+             The Future of Digital Banking: What to Expect in 2025 and Beyond
+            </h2>
+            <button class="mt-4 px-4 py-2 border border-gray-300 rounded-full text-gray-600">
+             Read more
+            </button>
+           </div>
+          </div>
+         </div>
+        </section>
+
+
+        
+        <section class="bg-blue-950 text-white text-center w-3/4 ml-40 rounded-lg py-16 mt-20">
+         <h2 class="text-2xl font-semibold">
+          Take Control of Your Finances
+         </h2>
+         <p class="mt-4">
+          Make wise decisions today. Click to start your crypto investment and start building a better future.
+         </p>
+         <div class="mt-8">
+          <button class="bg-white text-blue-800 px-6 py-3  font-semibold mr-4">
+           Get Started
+          </button>
+          <button class="bg-transparent border border-white px-6 py-3 font-semibold">
+           Learn more
+          </button>
+         </div>
+        </section>
+        <footer class="bg-white py-12 mt-12">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-wrap justify-between">
+           <div class="w-full md:w-1/4 mb-8 md:mb-0">
+            <h3 class="text-lg font-semibold">
+             FintechX TNC
+            </h3>
+           </div>
+           <div class="w-full md:w-3/4 flex flex-wrap justify-between">
+            <div class="w-1/2 md:w-1/4 mb-8 md:mb-0">
+             <h4 class="text-sm font-semibold mb-4">
+              Company
+             </h4>
+             <ul>
+              <li>
+               <a class="text-gray-600" href="#">
+                Trade
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Featured
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Market
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Portfolio
+               </a>
+              </li>
+             </ul>
+            </div>
+            <div class="w-1/2 md:w-1/4 mb-8 md:mb-0">
+             <h4 class="text-sm font-semibold mb-4">
+              Crypto Market
+             </h4>
+             <ul>
+              <li>
+               <a class="text-gray-600" href="#">
+                Price Chart
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Market Analysis
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Latest News
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                ICO (Initial Coin Offering)
+               </a>
+              </li>
+             </ul>
+            </div>
+            <div class="w-1/2 md:w-1/4 mb-8 md:mb-0">
+             <h4 class="text-sm font-semibold mb-4">
+              Resource
+             </h4>
+             <ul>
+              <li>
+               <a class="text-gray-600" href="#">
+                Guide for Beginners
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Trading Platform
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Digital Wallet
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Blockchain Technology
+               </a>
+              </li>
+             </ul>
+            </div>
+            <div class="w-1/2 md:w-1/4 mb-8 md:mb-0">
+             <h4 class="text-sm font-semibold mb-4">
+              Community
+             </h4>
+             <ul>
+              <li>
+               <a class="text-gray-600" href="#">
+                Crypto Discussion Forum
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Discord Group
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Local Meetup Events
+               </a>
+              </li>
+              <li>
+               <a class="text-gray-600" href="#">
+                Project Collaboration
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+          <div class="flex justify-between items-center mt-12">
+           <p class="text-gray-600">
+            © Copyright 2025 FintechX
+           </p>
+           <div class="flex space-x-4">
+            <a class="text-gray-600" href="#">
+             <i class="fab fa-instagram">
+             </i>
+            </a>
+            <a class="text-gray-600" href="#">
+             <i class="fab fa-twitter">
+             </i>
+            </a>
+            <a class="text-gray-600" href="#">
+             <i class="fab fa-facebook">
+             </i>
+            </a>
+           </div>
+           <div class="flex space-x-4">
+            <a class="text-gray-600" href="#">
+             Terms &amp; Conditions
+            </a>
+            <a class="text-gray-600" href="#">
+             Privacy Policy
+            </a>
+           </div>
+          </div>
+         </div>
+        </footer>
+       </section>
+      
+     
+</div>
+  
+</body>
+</html>
